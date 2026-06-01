@@ -9,24 +9,24 @@ To write a Python program that creates a **Student** class with a **default cons
 3. **Default Constructor**: In the constructor, assign the user input (student name) to an instance variable `self.a`.
 4. **Display Message**: Define a method `show` that prints "This is non-parameterized constructor" and a welcome message with the student’s name.
 5. **Execute the Program**: Instantiate the `Student` class and call the `show` method.
-
 ## 🧾 Program
-```
+~~~~~~
 class Student:
-    def __init__(self):
-        self.name = ""
+    def init(self,a):
+        self.a=a
+    def get(self):
+        self.a=input()
+    def info(self):
+        print("This is non parametrized constructor")
+        print("Hello",self.a)
+obj=Student()
+obj.get()
+obj.info()
+~~~~~~~
 
-    def display(self):
-        print("Welcome", self.name)
 
-student = Student()
-student.name = input("Enter student name: ")
-student.display()
-```
 ## Output
-```
-Enter student name: Arun
-Welcome Arun
-```
+<img width="1258" height="366" alt="WhatsApp Image 2026-05-28 at 9 13 44 PM" src="https://github.com/user-attachments/assets/bd720f47-b395-400a-bb43-e22966fce4a9" />
+
 ## Result
 the output is verified
