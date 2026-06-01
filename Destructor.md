@@ -21,24 +21,21 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-```
-class Student:
-    def __init__(self, name):
-        self.name = name
-        print("Object created")
+~~~~~
+class Demo:
+    def _init_(self):
+        print("Hello World!")
 
-    def __del__(self):
-        print("Destructor called")
+    def _del_(self):
+        print("Hello from the _del_ method.")
 
-student = Student("Arun")
-del student
-```
-
+# Create and delete the object
+obj = Demo()
+del obj
+~~~~~~~
 ## 🧪 Output
-```
-Object created
-Destructor called
-```
+<img width="1254" height="215" alt="WhatsApp Image 2026-05-28 at 9 14 12 PM" src="https://github.com/user-attachments/assets/fda1eef0-d4fb-4946-8740-d6d1c28a7b92" />
+
 ## Result
 the output is verified
 
